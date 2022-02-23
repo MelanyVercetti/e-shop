@@ -1,0 +1,240 @@
+/* Пункт списка */
+.Item {
+    display: flex;
+    justify-content: flex-start;
+    transition: background-color 1s;
+}
+
+.Item_selected {
+    background: #75aaf1;
+}
+
+.Item__number {
+    padding: 20px 10px 20px 20px;
+}
+
+.Item__title {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.Item__right {
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Item__price {
+    padding: 0 10px;
+    white-space: nowrap;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #535353;
+    font-family: sans-serif;
+}
+
+/* Страница*/
+.Layout{
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 5px #0000003b;
+}
+.Layout__head{
+    height: 80px;
+    background: #f5f5f5;
+}
+.Layout__head h1{
+    margin: 0;
+    padding: 20px 20px 10px;
+}
+/* Контрол с общими действиями */
+.BasketSimple{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.BasketSimple__label{
+
+}
+
+.BasketSimple__total{
+    font-weight: bold;
+    margin: 0 15px;
+}
+/*Список*/
+.List{
+
+}
+.List__item{
+    border-bottom: 1px dashed #ccc;
+}
+
+.List__item:first-child{
+    border-top: 1px dashed #ccc;
+}
+.Pages {
+  display: flex;
+  justify-content: end;
+  margin: 30px;
+}
+
+.pageItem {
+  margin: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  text-align: center;
+  list-style-type: none;
+
+}
+
+.pageLink {
+  text-decoration: none;
+}
+
+.pageItem:hover {
+  border: 1px solid black;
+  background-color: #ccc;
+}
+
+.pageItem:active {
+  background-color: #75aaf1;
+}
+
+.pageItem.active {
+  background-color: #75aaf1;
+}
+
+/* Пункт списка */
+.BasketTotal {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.BasketTotal__cell {
+    min-width: 100px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.LayoutModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  padding: 0 10px;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.LayoutModal__frame {
+  position: relative;
+  background: #ffffff;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 720px;
+  box-shadow: 2px 5px 10px rgb(0 0 0 / 5%);
+  min-width: 960px;
+}
+
+.LayoutModal__head {
+  height: 80px;
+  background: #f5f5f5;
+  display: flex;
+  /*align-items: stretch;*/
+  justify-content: space-between;
+  padding: 0 30px 0 20px;
+}
+
+.LayoutModal__close{
+  align-self: center;
+}
+
+.LayoutModal__title{
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.LayoutModal__content {
+  min-height: 100px;
+  padding: 70px 0;
+}
+/* Пункт списка */
+.ItemBasket {
+    display: flex;
+    justify-content: flex-start;
+    transition: background-color 1s;
+}
+
+.ItemBasket_selected {
+    background: #75aaf1;
+}
+
+.ItemBasket__number {
+    padding: 20px 10px 20px 20px;
+}
+
+.ItemBasket__title {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.ItemBasket__right {
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ItemBasket__cell {
+    min-width: 100px;
+    text-align: right;
+    font-size: 18px;
+}
+.LayoutGood {
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 5px #0000003b;
+}
+
+.good_header {
+  margin: 0;
+  padding: 20px 20px 10px;
+}
+
+.goode_header__simple_basket {
+  display: flex;
+  justify-content: space-between;
+}
+
+.good_info {
+  margin: 30px;
+}
+
+
+
